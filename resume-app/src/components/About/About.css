@@ -1,0 +1,53 @@
+.typewriterText {
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 10s steps(18, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+
+ .btn{
+            padding: 14px 14px;
+            display: inline-block;
+            color: white;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            text-decoration: underline; 
+            font-size: 1em;
+            font-weight: 600;
+            overflow: hidden;
+        }
+  
+        /*creating animation effect*/
+        .btn:hover {
+            color: #111;
+            background: #c2330f;
+            box-shadow: 0 0 50px #c21e1e;
+            text-decoration: none;
+        }

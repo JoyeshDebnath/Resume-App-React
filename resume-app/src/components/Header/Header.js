@@ -22,6 +22,15 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		flexGrow: 1,
+		color: "#fff",
+		textShadow:
+			"0 0 7px #fff,0 0 10px #fff,0 0 21px #fff,0 0 42px #0fa,0 0 82px #0fa,0 0 92px #0fa,0 0 102px #0fa,0 0 151px #0fa",
+	},
+	icon: { color: "#F6F5AE" },
+	neonText: {
+		color: "#fff",
+		textShadow:
+			"0 0 7px #fff, 0 0 10px #fff,0 0 21px #fff,0 0 42px #0fa,0 0 82px #0fa, 0 92px #0fa,0 0 102px #0fa,0 0 151px #0fa",
 	},
 }));
 
@@ -30,8 +39,8 @@ export default function ButtonAppBar() {
 
 	return (
 		<div className={classes.root}>
-			<AppBar position="static">
-				<Toolbar>
+			<AppBar position="sticky">
+				<Toolbar style={{ backgroundColor: "#2A2B2A" }}>
 					{/* <IconButton
 						edge="start"
 						className={classes.menuButton}
@@ -43,23 +52,23 @@ export default function ButtonAppBar() {
 					<Typography variant="h6" className={classes.title}>
 						JOYESH
 					</Typography>
-					<Button color="inherit">
-						<Link to="/">
+					<Button>
+						<Link to="/" className={classes.icon}>
 							<InfoIcon />
 						</Link>
 					</Button>
-					<Button color="inherit">
-						<Link to="/resume">
+					<Button>
+						<Link to="/resume" className={classes.icon}>
 							<ReceiptIcon />
 						</Link>
 					</Button>
-					<Button color="inherit">
-						<Link to="/projects">
+					<Button>
+						<Link to="/projects" className={classes.icon}>
 							<WbIncandescentIcon />
 						</Link>
 					</Button>
-					<Button color="inherit">
-						<Link to="/contacts">
+					<Button>
+						<Link to="/contacts" className={classes.icon}>
 							<ContactMailIcon />
 						</Link>
 					</Button>
