@@ -40,7 +40,7 @@ export default function ButtonAppBar() {
 	return (
 		<div className={classes.root}>
 			<AppBar position="sticky">
-				<Toolbar style={{ backgroundColor: "#2A2B2A" }}>
+				<Toolbar style={{ backgroundColor: "#2A2B2A", zIndex: -1 }}>
 					{/* <IconButton
 						edge="start"
 						className={classes.menuButton}
