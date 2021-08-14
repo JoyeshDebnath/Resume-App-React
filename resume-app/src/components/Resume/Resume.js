@@ -6,6 +6,7 @@ import Skill from "./Skill";
 import Languages from "./Languages";
 import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
 import Tools from "./Tools";
+import Profiles from "./Profiles";
 const arr = [
 	{
 		edu: "The Assembly Of God Church School",
@@ -82,7 +83,10 @@ const Resume = () => {
 					LANGUAGES🧏
 				</Typography>
 				<Languages />
-
+				<Typography variant="h2" style={{ color: "white", marginTop: "1rem" }}>
+					Coding Profiles💻
+				</Typography>
+				<Profiles />
 				<Button
 					variant="contained"
 					color="secondary"
