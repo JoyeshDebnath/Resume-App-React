@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Route } from "react-router-dom";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
-import Contact from "./components/Contact/Contact";
+import ContactWrapper from "./components/Contact/ContactWrapper";
 import About from "./components/About/About";
 const App = () => {
 	return (
@@ -14,7 +14,7 @@ const App = () => {
 			<Route path="/" exact component={About} />
 			<Route path="/projects" exact component={Projects} />
 			<Route path="/resume" exact component={Resume} />
-			<Route path="/contacts" exact component={Contact} />
+			<Route path="/contacts" exact component={ContactWrapper} />
 			<Footer />
 		</BrowserRouter>
 	);
