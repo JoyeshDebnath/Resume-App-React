@@ -1,16 +1,58 @@
 import React from "react";
-import { Toolbar, AppBar, Typography, Container } from "@material-ui/core";
+import {
+	Toolbar,
+	AppBar,
+	Typography,
+	Container,
+	makeStyles,
+} from "@material-ui/core";
+import { AiFillGithub } from "react-icons/ai";
+import { GrInstagram } from "react-icons/gr";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
+
+const useStyles = makeStyles({
+	position: {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "space-around",
+	},
+	icons: {
+		marginLeft: "2rem",
+		fontSize: "2.5rem",
+		cursor: "pointer",
+		"&:hover": {
+			color: "#d55d92",
+		},
+	},
+});
 
 export default function Footer() {
+	const classes = useStyles();
 	return (
 		<AppBar
 			position="static"
-			style={{ backgroundColor: "#0a0908", display: "flex" }}
+			style={{
+				backgroundColor: "#0a0908",
+			}}
 		>
 			<Container maxWidth="md">
-				<Toolbar>
+				<Toolbar className={classes.position}>
 					<Typography variant="body1" color="inherit">
-						© 2019 Gistia
+						<a href="https://github.com/JoyeshDebnath">
+							<AiFillGithub className={classes.icons} />
+						</a>
+
+						<a href="https://www.instagram.com/joyeshdebnath9311/">
+							<GrInstagram className={classes.icons} />
+						</a>
+
+						<a href="https://www.facebook.com/joyesh.debnath.1">
+							<FaFacebook className={classes.icons} />
+						</a>
+						<a href="https://twitter.com/JoyeshDebnath">
+							<AiFillTwitterCircle className={classes.icons} />
+						</a>
 					</Typography>
 				</Toolbar>
 			</Container>
