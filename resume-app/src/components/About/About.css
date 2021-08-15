@@ -6,7 +6,7 @@
   	letter-spacing: 2px;
  	animation: typing 10s steps(18, end), blink .75s step-end infinite;
     white-space: nowrap;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 700;
     border-right: 4px solid orange;
     box-sizing: border-box;
@@ -36,11 +36,12 @@
             padding: 14px 14px;
             display: inline-block;
             color: white;
-            letter-spacing: 5px;
+           
             text-transform: uppercase;
-            text-decoration: underline; 
-            font-size: 1em;
-            font-weight: 600;
+            text-decoration: none; 
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: 3px;
             overflow: hidden;
         }
   

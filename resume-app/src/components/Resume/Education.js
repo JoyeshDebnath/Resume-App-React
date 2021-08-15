@@ -29,7 +29,6 @@ const useStyles = makeStyles({
 
 export default function Education({ data }) {
 	const classes = useStyles();
-	const bull = <span className={classes.bullet}>•</span>;
 
 	return (
 		<Card className={classes.root} variant="outlined">
@@ -40,6 +39,9 @@ export default function Education({ data }) {
 					gutterBottom
 				></Typography>
 				<Typography variant="h4">{data.edu}</Typography>
+				<Typography variant="h5">
+					Year: {"   "} {data.year}
+				</Typography>
 				<Typography className={classes.pos}>Degree: {data.deg}</Typography>
 				<Typography variant="h4">
 					Percentage:{data.per}

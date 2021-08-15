@@ -40,7 +40,12 @@ export default function Profiles() {
 					<ul style={{ textDecoration: "none" }}>
 						<a
 							href="https://leetcode.com/Joyesh/"
-							style={{ textDecoration: "none" }}
+							style={{
+								textDecoration: "none",
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+							}}
 						>
 							<SiLeetcode style={{ fontSize: "2rem", color: "#ff3c38" }} />
 							{"    "}{" "}
@@ -52,7 +57,12 @@ export default function Profiles() {
 
 						<a
 							href="https://github.com/JoyeshDebnath"
-							style={{ textDecoration: "none" }}
+							style={{
+								textDecoration: "none",
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+							}}
 						>
 							<br />
 							<br />

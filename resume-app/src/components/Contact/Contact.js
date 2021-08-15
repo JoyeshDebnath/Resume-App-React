@@ -64,14 +64,18 @@ const Contact = () => {
 				<Typography
 					variant="h3"
 					className={classes.heading}
-					style={{ textDecoration: "underline" }}
+					style={{ color: "#ea7317" }}
 				>
 					Contact ME {"    "}
 					<DraftsIcon style={{ fontSize: "2rem" }} />
 				</Typography>
+				<hr />
 
 				<br />
-				<label className={classes.heading} style={{ fontSize: "1.5rem" }}>
+				<label
+					className={classes.heading}
+					style={{ fontSize: "1.5rem", color: "#f1c453" }}
+				>
 					Name:
 				</label>
 				<input
@@ -80,8 +84,11 @@ const Contact = () => {
 					value={name}
 					onChange={(e) => setName(e.target.value)}
 				/>
-				<label className={classes.heading} style={{ fontSize: "1.5rem" }}>
-					Email📨:
+				<label
+					className={classes.heading}
+					style={{ fontSize: "1.5rem", color: "#f1c453" }}
+				>
+					Email/Phone:
 				</label>
 				<input
 					type="email"
@@ -89,8 +96,11 @@ const Contact = () => {
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
 				/>
-				<label className={classes.heading} style={{ fontSize: "1.5rem" }}>
-					Message :
+				<label
+					className={classes.heading}
+					style={{ fontSize: "1.5rem", color: "#f1c453" }}
+				>
+					Message ME👇:
 				</label>
 				<textarea
 					placeholder="Enter your Message"
@@ -99,9 +109,9 @@ const Contact = () => {
 				/>
 				<button
 					type="submit"
-					style={{ background: loader ? "#ccc" : " #000000" }}
+					style={{ background: loader ? "#ccc" : " #000000", padding: "1rem" }}
 				>
-					Mail ME✌️
+					Submit Message✌️
 				</button>
 			</form>
 		</Grid>

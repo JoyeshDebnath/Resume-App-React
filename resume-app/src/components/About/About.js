@@ -17,12 +17,21 @@ const useStyles = makeStyles((theme) => ({
 	cover: {
 		// filter: "brightness(50%)",
 		backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5),
-                       rgba(0, 0, 0, 0.5)),url(https://images.unsplash.com/photo-1562819606-b7a0ebd7e7c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)`,
-		backgroundPosition: "center",
+                       rgba(0, 0, 0, 0.5)),url(https://www.designyourway.net/blog/wp-content/uploads/2018/12/programming-wallpaper11-700x394.jpg)`,
+		// backgroundPosition: "center",
+
 		// height: 500,
-		padding: "35px 25px",
+		/* Full height */
+		height: "100vh",
+
+		/* Center and scale the image nicely */
+
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
 		display: "flex",
 		flexDirection: "column",
+		justifyContent: "center",
+		alignItems: "center",
 	},
 	title: {
 		fontSize: 40,
@@ -62,53 +71,61 @@ const About = () => {
 				>
 					<Typography
 						style={{
-							color: "white",
-							fontSize: 60,
+							color: "#fcefb4",
+							fontSize: "3rem",
 						}}
 					>
 						ABOUT ME
+						<hr />
 					</Typography>
+					<br />
 					<Avatar
-						style={{ marginLeft: "3rem" }}
+						style={{ marginLeft: "3rem", marginTop: "0.4rem" }}
 						alt="Remy Sharp"
 						src={JD}
 						className={classes.large}
 					/>
+					<br />
 				</Grid>
-
-				{/* <Divider light /> */}
 
 				<Typography
 					className="typewriterText"
 					style={{ fontSize: 40, fontFamily: "Montserrat" }}
 					gutterBottom
 				>
-					WELCOME TO MY PAGE
+					W E L C O M E
 				</Typography>
-				<Typography variant="h5" component="h2" style={{ color: "white" }}>
-					Hello Myself Joyesh Debnath.
-					<br />I love to code ,watch movies and webSeries and play soccer.
+				<br />
+				<hr />
+				<br />
+				<br />
+				<Typography
+					variant="h5"
+					component="h2"
+					style={{ color: "#ffc300", marginTop: "0.6rem" }}
+				>
+					Hi👋Myself Joyesh Debnath.
+					<br />I love to code,watch movies and webSeries and play soccer.
 				</Typography>
 			</CardContent>
 			<CardActions>
 				{/* <Button variant="text" style={{ color: "#90caf9", fontWeight: 700 }}>
 					Read More..
 				</Button> */}
-				<Button>
-					<Link className="btn" to="/resume">
-						Resume
-					</Link>
-				</Button>
-				<Button>
-					<Link className="btn" to="/projects">
-						Projects
-					</Link>
-				</Button>
-				<Button>
+
+				<Link className="btn" to="/resume">
+					Resume
+				</Link>
+
+				<Link className="btn" to="/projects">
+					Projects
+				</Link>
+
+				{/* <Button>
 					<Link className="btn" to="/contact">
 						ContactME
 					</Link>
-				</Button>
+				</Button> */}
 			</CardActions>
 		</Card>
 	);
